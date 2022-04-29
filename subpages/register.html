@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Register to Mahob Delivery | Mahob</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mahob | Food Delivery</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="./media/logo/mahoubLogo3.png" />
+	</head>
+	<body>
+        <main>
+            <div class="account" onkeydown="info()"> 
+    
+                <div class="profile">
+    
+                    <h1 id="pro-head">Profile</h1>
+                    <div class="profile-img">
+                        <img src="1.jpg">
+                    </div>
+                    <h3 id="info-name">Username</h3>
+    
+                </div>
+    
+                <div class="payment">
+    
+                    <h1 id="user-head">User Information</h1>
+    
+                    <div class="info">
+                        <div class="label">
+                            <label>firstname:</label>
+                            <div class="input">
+                                <p id="info1">*****</p>
+                            </div>
+                        </div>
+    
+                        <div class="label">
+                            <label>lastname:</label>
+                            <div class="input">
+                                <p id="info2">*****</p>
+                            </div>
+                        </div>
+    
+                        <div class="label">
+                            <label>Email</label>
+                            <div class="input">
+                                <p id="info3">****@gmail.com</p>
+                            </div>
+                        </div>
+    
+                        <div class="label">
+                            <label>Mobile:</label>
+                            <div class="input">
+                                <p id="info4">*** *** ***</p>
+                            </div>
+                        </div>
+    
+                        <div class="label">
+                            <label>Address:</label>
+                            <div id="input-address">
+                                <p id="info5">*** *** ******* *****</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <form class="pay-form">
+                        <h1>Payment Method</h1>
+                        
+                        <div class="pay-btn">
+    
+                            <div id="visa-btn" onclick="payFunction('visa')">
+                                <p>Visa</p>
+                            </div>
+    
+                            <div id="pal-btn" onclick="payFunction('pal')">
+                                <p>Paypal</p>
+                            </div>
+    
+                        </div>
+    
+                        <div class="payment-form">
+                            <div class="visa">
+                                <form>
+                                    <input type="number" placeholder="Card Number">
+                                    <input type="text" placeholder="Card Holder Name">
+                                    <div style="display: flex; flex-wrap: nowrap;" >
+                                        <input type="month" placeholder="MM / YY" value="2018-05">
+                                        <input type="number" placeholder="CVV">
+                                    </div>
+                                </form>
+                            </div>
+    
+                            <div class="paypal">
+                                <p>You will be redirect to Paypal page.</p>
+                            </div>     
+                        </div> 
+    
+                        <div id="payment-btn">Set</div>
+                    
+                    </form>
+                </div>
+    
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+
+    <script type="text/javascript" src="script1.js"></script>
+    <script type="text/javascript" src="temp.js"></script>
+</html>
