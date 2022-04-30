@@ -351,11 +351,12 @@ footer ul {
 .outerForm {
     margin: 5em auto;
     padding: 1em 0;
-    width: 30%;
+    width: 40%;
     height: auto;
     border: solid 1px;
     border-radius: 1em;
     min-width: 350px;
+    min-width: 450px;
 }
 
 #head1 {
@@ -604,11 +605,10 @@ footer ul {
     }
 }
 
-/* Restaurent Page */
 .hero-restaurant {
     width: 100%;
     height: 60vh;
-    background-image: url("../media/images/food.jpeg");
+    background-image: url("../media/images/hero.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -629,30 +629,35 @@ footer ul {
     border-radius: 2em;
 }
 
-a:link,
-a:visited {
-    color: black;
+#location {
+    text-decoration: none;
+    color: var(--clr-light);
 }
-  
-a:hover {
+
+#location:hover {
+    text-decoration: underline;
     background-color: darkgreen;
 }
   
-  .tags {
+.tags {
     text-align: center;
     font-size: 3em;
-  }
+}
   
-  hr {
+hr {
     margin-top: -2em;
     margin-bottom: 3em;
     width: 60%;
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, var(--foreground), var(--foreground), var(--foreground));
-  }
+}
   
   /* gallery */
+#link-to-menu {
+    text-decoration: none;
+}
+  
 .restuarant {
     display: flex;
     flex-wrap: wrap;
@@ -660,7 +665,7 @@ a:hover {
     width: 90%;
     margin: auto;
 }
-  
+
 .menu {
     padding: 1em;
     width: 45%;
@@ -699,6 +704,276 @@ a:hover {
     background-color: var(--clr-accent);
     color: var(--clr-light);
     border-radius: 1em;
+}
+
+/*new animation code*/
+.menu {
+    transition: transform .3s; /* Animation */
+  }
+  
+.menu:hover {
+    transform: scale(1.1);
+  }
+.seemore {
+    margin-left: 5em;
+}
+
+@media (max-width: 800px) {
+    .restuarant {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 80%;
+        margin: 1em auto;
+    }
+}
+
+/* Profile Page */
+.account {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 2em auto;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+
+.profile {
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background-color: white;
+    width: 30%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.075);
+    backdrop-filter: blur(1rem);
+    border-radius: 1em;
+}
+
+.profile-img {
+    width: 70%;
+    margin: auto;
+}
+
+.profile-img img{
+    width: 100%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.profile h3 {
+    text-align: center;
+}
+
+.profile-headers {
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    background-color: green;
+    margin: 0 0 1em 0;
+    border-radius: 0.5em;
+}
+
+.section {
+    width: 65%;
+    background-color: rgba(0, 0, 0, 0.075);
+    backdrop-filter: blur(1rem);
+    border-radius: 1em;
+    padding-bottom: 1em;
+}
+
+/* information */
+.info {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0 5% 5%;
+}
+
+.info .label {
+    margin-right: 10%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.info label {
+    font-size: 1.2em;
+}
+
+.info .label .input {
+    width: 82%;
+    border: solid 1px var(--foreground);
+}
+
+/* address */
+
+.info .label  #input-address{
+    padding: 0 5%;
+    border: solid 1px var(--foreground);
+    border-radius: 10px;
+    width: 82%;
+    margin-left: 0.5em;
+}
+
+#edit-icon {
+    cursor: pointer;
+    background-color: rgb(81, 81, 201);
+    border: 1px solid black;
+    width: 2em;
+    text-align: center;
+    position: relative;
+    margin-bottom: -0.5em;
+    margin-left: 26em;
+    color: white;
+}
+
+#openEdit {
+    display: none;
+}
+
+.editAdd {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.editAdd input{
+    outline: none;
+    width: 20em;
+    margin-right: 1em;
+    padding: 1em 2em;
+    border-radius: 0.9em;
+}
+
+#set {
+    margin-top: 1em;
+    color: white;
+    background-color: green;
+    padding: 0.5em 0;
+    border: solid black 1px;
+    text-align: center;
+    width: 30%;
+}
+
+.info .input {
+    padding: 0 5%;
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 0.5em;
+}
+
+.opt select{
+    width: 20%;
+    padding: 1% 5%;
+}
+
+/* ---------------- */
+
+.pay-form {
+    padding: 3% 5%;
+}
+
+.pay-form h1 {
+    margin-top: 0;
+    color: var(--foreground);
+}
+
+.pay-btn {
+    display: flex;
+    margin-left: 5%;
+    height: 50px;
+}
+
+.pay-btn #visa-btn {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    padding: 0 5%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.pay-btn #pal-btn {
+    text-align: center;
+    font-weight: bold;
+    padding: 0 5%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.payment-form {
+    background-color: rgba(0, 0, 0, 0.075);
+    backdrop-filter: blur(1rem);
+    padding: 5%;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.visa {
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+}
+
+.visa input{
+    width: 90%;
+    padding: 3% 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    border: solid 1px var(--foreground);
+    border-radius: 10px;
+}
+
+.paypal {
+    text-align: center;
+    color: white;
+    background-color: rgb(109, 109, 212);
+    border: 1px solid black;
+    padding: 0 3%;
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    display: none;
+}
+
+.bottom-btn {
+    padding: 1% 5%;
+}
+
+#payment-btn {
+    color: white;
+    background-color: var(--clr-accent);
+    padding: 2% 5%;
+    border-radius: 1em;
+    width: 10%;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .account {
+        flex-direction: column;
+        margin-top: 0.5em;
+    }
+
+    .profile-headers {
+        padding: 0.5em 0;
+    }
+    
+    .profile {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+
+    .profile-img {
+        width: 30%;
+        min-width: 250px;
+    }
+
+    .section {
+        width: 100%;
+        min-width: 250px;
+    }
 }
 
 /* Other Medias */
