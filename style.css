@@ -43,6 +43,10 @@ nav {
     font-size: 1.2em;
 }
 
+#mobile-nav-logo {
+    display: none;
+}
+
 .mobile-nav-toggle{
     display: none;
 }
@@ -108,7 +112,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     height: 70vh;
-    min-height: 630px;
+    min-height: 500px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -342,6 +346,361 @@ footer ul {
     }
 }
 
+/* Login Page */
+
+.outerForm {
+    margin: 5em auto;
+    padding: 1em 0;
+    width: 30%;
+    height: auto;
+    border: solid 1px;
+    border-radius: 1em;
+    min-width: 350px;
+}
+
+#head1 {
+    text-align: center;
+}
+
+#head2 {
+    display: none;
+    text-align: center;
+}
+
+.btn {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.btn-login {
+    cursor: pointer;
+    background-color: darkgreen;
+    padding: 3% 12%;
+    border-right: none;
+    margin: 2px 0;
+    text-align: center;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    font-size: 1.3em;
+    color: white;
+}
+
+  .btn-signin {
+    cursor: pointer;
+    background-color: rgb(55, 230, 55);
+      padding: 3% 12%;
+      border-left: none;
+      margin: 2px 0;
+      text-align: center;
+      border-top-right-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+      font-size: 1.3em;
+      color: white;
+  }
+
+  .btn-login:hover, .btn-signin:hover {
+      opacity: 80%;
+  }
+
+  .register {
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .login input {
+    outline: none;
+    font-size: 19px;
+    margin: 20px 0;
+    padding: 5% 1% 1% 1%;
+    border: none;
+    border-bottom: solid 2px green;
+  }
+
+  .signin {
+      width: 70%;
+      margin: auto;
+  }
+
+  .signin input {
+    outline: none;
+    font-size: 19px;
+    margin: 20px 0;
+    width: 100%;
+    padding: 5% 1% 1% 1%;
+    border: none;
+    border-bottom: solid 2px green;
+  }
+
+  .extra-name {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .extra-name input {
+    width: 100%;
+  }
+
+  #submit {
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    border: none;
+    padding: 5% 0;
+    background-color: darkgreen;
+    color: white;
+    margin-bottom: 5%;
+  }
+
+  #submit:hover {
+    opacity: 80%;
+  }
+
+  .form1 {
+      display: block;
+  }
+
+  .form2 {
+    display: none;
+  }
+
+/* Menu Page */
+/*Hero Image*/
+.menu-info {
+    width: 95%;
+    margin: auto;
+}
+
+#hero-image {
+    z-index: -1;
+    height: 40vh;
+    background-image: url('./media/images/photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-info {
+    width: 95%;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#menu-profile {
+    display: flex;
+    margin-top: -13em;
+    flex-wrap: nowrap;
+    color: white;
+    background-image: url("./media/images/grid/topaz.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 50%;
+    max-width: 400px;
+}
+
+#description {
+    margin-left: 3em;
+}
+
+#description h1{
+    margin-top: -1.6em;
+    font-size: 5em;
+    color: white;
+}
+
+#open-close {
+    color: var(--clr-light);
+    padding: 0.5em 1em;
+    background-color: var(--clr-accent);
+    border-radius: 5em;
+}
+
+/* section2 */
+
+.menu-main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.menuItem {
+    border: 1px solid black;
+    width: 60%;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#item {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#item img {
+    width: 13em;
+}
+
+#item-info {
+    margin-left: 1em;
+    width: 15em;
+}
+
+#add {  
+    padding: 3em;
+}
+
+.checkout {
+    width: 30%;
+    border: 1px solid black;    
+    margin: auto;
+    padding: 1em;
+}
+
+@media (max-width: 700px) {
+    .menu-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #menu-profile {
+        width: 200px;
+        height: 200px;
+        margin-top: -13em;
+    }
+
+    #description {
+        margin-left: 0;
+    }
+
+    #description h1 {
+        margin-top: 0;
+        color: var(--foreground);
+    }
+
+    .menu-main {
+        flex-direction: column;
+    }
+
+    .menuItem {
+        width: 90%;
+        margin: auto;
+    }
+
+    .checkout{
+        width: 90%;
+    }
+}
+
+/* Restaurent Page */
+.hero-restaurant {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../media/images/food.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-restaurant h1 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+    position: absolute;
+    top: 550px;
+}
+
+.hero-restaurant a {
+    text-decoration: none;
+    margin-left: 5em;
+    background-color: var(--clr-accent);
+    padding: 10px;
+    border-radius: 2em;
+}
+
+a:link,
+a:visited {
+    color: black;
+}
+  
+a:hover {
+    background-color: darkgreen;
+}
+  
+  .tags {
+    text-align: center;
+    font-size: 3em;
+  }
+  
+  hr {
+    margin-top: -2em;
+    margin-bottom: 3em;
+    width: 60%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--foreground), var(--foreground), var(--foreground));
+  }
+  
+  /* gallery */
+.restuarant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+  
+.menu {
+    padding: 1em;
+    width: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.075);
+    backdrop-filter: blur(1rem);
+    margin-bottom: 2em;
+}
+  
+.menu img {
+    width: 100%;
+    border-radius: 1em;
+}
+  
+#text {
+    color: var(--foreground);
+    padding: 0 0.5em;
+}
+
+#text h2 {
+    margin: 3px auto;
+    font-size: 2em;
+}
+  
+#text #rating{
+    opacity: 90%;
+    font-size: 0.8em;
+}
+  
+#text #open-close{
+    font-size: 0.8em;
+    padding: 0.4em 0.3em;
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+    border-radius: 1em;
+}
+
 /* Other Medias */
 @media (max-width: 35em) {
     .primary-navigation {
@@ -380,6 +739,15 @@ footer ul {
     .hero-phrase {
         text-align: center;
         font-size: 1.2em;
+    }
+
+    #mobile-nav-logo{
+        display: block;
+        margin: auto;
+    }
+
+    .hero {
+        height: 60vh;
     }
 }
 
